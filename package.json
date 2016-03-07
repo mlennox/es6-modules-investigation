@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "module1": "babel-node loader.es6"
+    "start": "babel-node loader.es6"
   },
   "babel": {
     "presets": ["es2015"]

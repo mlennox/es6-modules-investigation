@@ -6,9 +6,19 @@ var anotherOneHandler = function() {
     console.log('another handler');
 };
 
+var someKindOfFunction = function() {
+    console.log('this looks familiar but is completely different');
+}
+
 // there can only be one default export per module
 // but there does not need to be a default
-export default moduleOneHandler;
+
+export default {
+    moduleOneHandler,
+    someKindOfFunction
+}
+
+export { moduleOneHandler }
 
 // exports can rename the exported module
 export { moduleOneHandler as renamedModuleOneHandler }
